@@ -16,7 +16,10 @@ const Profile = props => {
     >
       {props.children}
 
-      <p style={{ writingMode: "vertical-lr", color: "#9b3c41" }}>
+      <p
+        style={{ writingMode: "vertical-lr", color: "#9b3c41" }}
+        onClick={props.handleName}
+      >
         {props.profession}
       </p>
       <div
